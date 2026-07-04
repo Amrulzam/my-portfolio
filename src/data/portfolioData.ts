@@ -3,6 +3,12 @@
 // Add/edit items here; components render via .map()
 // ================================================
 
+// Helper function to resolve static asset URLs correctly with Vite base path
+export const getAssetUrl = (path: string): string => {
+  const cleanPath = path.replace(/^\//, '');
+  return `${import.meta.env.BASE_URL}${cleanPath}`;
+};
+
 // ================================================
 // PROJECTS
 // ================================================
@@ -25,7 +31,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Real-time Chat Web Application',
-    image: '/assets/work/chatApp.png',
+    image: getAssetUrl('assets/work/chatApp.png'),
     shortDescription:
       'A full-stack real-time chat application with private and group messaging powered by WebSockets.',
     fullDescription:
@@ -50,7 +56,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: 'Inventory Management System',
-    image: '/assets/work/inventory.jpg',
+    image: getAssetUrl('assets/work/inventory.jpg'),
     shortDescription:
       'A stock management system for small-to-medium businesses to handle products, suppliers, and sales records.',
     fullDescription:
@@ -75,7 +81,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: 'Primary School Website',
-    image: '/assets/work/school.webp',
+    image: getAssetUrl('assets/work/school.webp'),
     shortDescription:
       'A responsive informational website for a primary school with academic details, announcements, and inquiry forms.',
     fullDescription:
@@ -100,7 +106,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: 'Construction Company Website',
-    image: '/assets/work/construction.webp',
+    image: getAssetUrl('assets/work/construction.webp'),
     shortDescription:
       'A professional corporate website showcasing construction services, completed projects, and client inquiries.',
     fullDescription:
@@ -125,7 +131,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: 'Social Media Web Application',
-    image: '/assets/work/socialMedia.png',
+    image: getAssetUrl('assets/work/socialMedia.png'),
     shortDescription:
       'A university group project social media platform with posts, profiles, followers, and interactive user features.',
     fullDescription:
@@ -205,11 +211,11 @@ export interface Tool {
 }
 
 export const tools: Tool[] = [
-  { name: 'VS Code',    image: '/assets/tools/vsc.webp' },
-  { name: 'Git',        image: '/assets/tools/git.webp' },
-  { name: 'IntelliJ',  image: '/assets/tools/intelliJ.png' },
-  { name: 'PostgreSQL', image: '/assets/tools/postgreSql.png' },
-  { name: 'Figma',      image: '/assets/tools/figma.webp' },
+  { name: 'VS Code',    image: getAssetUrl('assets/tools/vsc.webp') },
+  { name: 'Git',        image: getAssetUrl('assets/tools/git.webp') },
+  { name: 'IntelliJ',  image: getAssetUrl('assets/tools/intelliJ.png') },
+  { name: 'PostgreSQL', image: getAssetUrl('assets/tools/postgreSql.png') },
+  { name: 'Figma',      image: getAssetUrl('assets/tools/figma.webp') },
 ];
 
 // ================================================
@@ -225,17 +231,17 @@ export const socialLinks: SocialLink[] = [
   {
     name: 'Facebook',
     url: 'https://www.facebook.com/share/1CpnEv7mzz/?mibextid=wwXIfr',
-    image: '/assets/social/facebook.webp',
+    image: getAssetUrl('assets/social/facebook.webp'),
   },
   /* {
     name: 'Instagram',
     url: 'https://www.instagram.com/',
-    image: '/assets/social/instagram.jpg',
+    image: getAssetUrl('assets/social/instagram.jpg'),
   }, */
   {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/amrul-haq-23a45b242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
-    image: '/assets/social/linkedin.webp',
+    image: getAssetUrl('assets/social/linkedin.webp'),
   },
 ];
 
