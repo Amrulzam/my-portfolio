@@ -1,0 +1,23 @@
+.toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.toggle:hover {
+  background: var(--accent-glow);
+  transform: scale(1.08);
+  box-shadow: var(--shadow-md);
+  color: var(--accent);
+}
+
+.toggle:active { transform: scale(0.94); }

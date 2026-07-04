@@ -1,0 +1,79 @@
+/* ================================================
+   THEME CSS — CSS custom properties for light/dark
+   ================================================ */
+
+/* ---- Light Theme (default) ---- */
+[data-theme="light"] {
+  --bg-primary: #F8FAFC;
+  --bg-section: #F1F5F9;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
+  --accent: #2563EB;
+  --accent-dark: #1D4ED8;
+  --accent-glow: rgba(37, 99, 235, 0.15);
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 12px 32px -4px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+  --shadow-card: 0 2px 12px -2px rgba(15, 23, 42, 0.06), 0 1px 4px -1px rgba(15, 23, 42, 0.04);
+  --header-bg: rgba(255, 255, 255, 0.85);
+  --header-border: rgba(226, 232, 240, 0.8);
+  --nav-pill-bg: rgba(255, 255, 255, 0.95);
+  --nav-pill-border: rgba(37, 99, 235, 0.25);
+  --btn-primary-bg: linear-gradient(135deg, #2563EB 0%, #4F46E5 100%);
+  --btn-primary-text: #FFFFFF;
+  --btn-secondary-bg: #FFFFFF;
+  --btn-secondary-border: #3B82F6;
+  --btn-secondary-text: #1E40AF;
+  --input-bg: #FFFFFF;
+  --input-border: #CBD5E1;
+  --input-focus: #2563EB;
+  --toast-bg: #FFFFFF;
+  --toast-border: #2563EB;
+  --sidebar-bg: rgba(255, 255, 255, 0.98);
+  --sidebar-overlay: rgba(15, 23, 42, 0.45);
+  --gradient-hero: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 50%, #EEF2FF 100%);
+  --gradient-accent: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+}
+
+/* ---- Dark Theme ---- */
+[data-theme="dark"] {
+  --bg-primary: #0F172A;
+  --bg-section: #111827;
+  --bg-card: #1E293B;
+  --bg-card-hover: #263347;
+  --accent: #7DB7E8;
+  --accent-dark: #5A9FD6;
+  --accent-glow: rgba(125, 183, 232, 0.25);
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --border: #334155;
+  --border-strong: #475569;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --header-bg: rgba(15, 23, 42, 0.85);
+  --header-border: rgba(51, 65, 85, 0.7);
+  --nav-pill-bg: rgba(30, 41, 59, 0.9);
+  --nav-pill-border: rgba(125, 183, 232, 0.3);
+  --btn-primary-bg: linear-gradient(135deg, #7DB7E8, #5A9FD6);
+  --btn-primary-text: #0F172A;
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: #7DB7E8;
+  --btn-secondary-text: #F8FAFC;
+  --input-bg: #1E293B;
+  --input-border: #334155;
+  --input-focus: #7DB7E8;
+  --toast-bg: #1E293B;
+  --toast-border: #7DB7E8;
+  --sidebar-bg: rgba(17, 24, 39, 0.98);
+  --sidebar-overlay: rgba(0, 0, 0, 0.6);
+  --gradient-hero: linear-gradient(135deg, #0F172A 0%, #111827 100%);
+  --gradient-accent: linear-gradient(135deg, #c798fa, #7DB7E8);
+}
