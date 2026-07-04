@@ -1,7 +1,6 @@
 import { type FC } from 'react';
 import styles from './Hero.module.css';
-import { getAssetUrl } from '../data/portfolioData';
-const heroImg = getAssetUrl('assets/pro_2.jpeg');
+const heroImg = '/assets/pro_2.jpeg';
 
 const Hero: FC = () => {
   const scrollTo = (href: string) => {
