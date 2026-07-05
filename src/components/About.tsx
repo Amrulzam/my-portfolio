@@ -1,9 +1,9 @@
 import { type FC } from 'react';
 import styles from './About.module.css';
 import InfoCard from './InfoCard';
-import { infoCards, tools } from '../data/portfolioData';
+import { infoCards, tools, getAsset } from '../data/portfolioData';
 
-const aboutImg = '/assets/Prot.jpeg';
+const aboutImg = getAsset('/assets/Prot.jpeg');
 
 const About: FC = () => {
   return (
