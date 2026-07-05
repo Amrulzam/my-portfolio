@@ -25,7 +25,7 @@ const Hero: FC = () => {
           </h1> */}
           <p className={styles.desc}>
             Final-year Information Systems Engineering &amp; Informatics student
-            passionate about building end-to-end digital solutionsand solving real-world problems through clean and efficient software solutions.
+            passionate about building end-to-end digital solutions and solving real-world problems through clean and efficient software solutions.
           </p>
           <div className={styles.buttons}>
             <button
